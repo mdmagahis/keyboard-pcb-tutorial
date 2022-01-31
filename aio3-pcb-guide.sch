@@ -110,13 +110,7 @@ F 3 "~" H 1250 2950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2600 2850 1850 2850
-Wire Wire Line
 	1350 2950 2600 2950
-Wire Wire Line
-	1150 2950 700  2950
-Wire Wire Line
-	1650 2850 700  2850
 $Comp
 L Device:C_Small C?
 U 1 1 61F85CD3
@@ -354,5 +348,44 @@ Wire Wire Line
 Wire Wire Line
 	2050 1750 1850 1750
 Wire Wire Line
-	2450 1850 2600 1850
+	2450 1850 2550 1850
+$Comp
+L Device:R_Small R?
+U 1 1 61FA0370
+P 2550 1500
+F 0 "R?" H 2609 1546 50  0000 L CNN
+F 1 "10k" H 2609 1455 50  0000 L CNN
+F 2 "" H 2550 1500 50  0001 C CNN
+F 3 "~" H 2550 1500 50  0001 C CNN
+	1    2550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1850 2550 1600
+Connection ~ 2550 1850
+Wire Wire Line
+	2550 1850 2600 1850
+$Comp
+L power:+5V #PWR?
+U 1 1 61FA1EE4
+P 2550 1300
+F 0 "#PWR?" H 2550 1150 50  0001 C CNN
+F 1 "+5V" H 2565 1473 50  0000 C CNN
+F 2 "" H 2550 1300 50  0001 C CNN
+F 3 "" H 2550 1300 50  0001 C CNN
+	1    2550 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 1400 2550 1300
+Wire Wire Line
+	2600 2850 1850 2850
+Text GLabel 1000 2850 0    50   Input ~ 0
+D+
+Text GLabel 1000 2950 0    50   Input ~ 0
+D-
+Wire Wire Line
+	1000 2950 1150 2950
+Wire Wire Line
+	1650 2850 1000 2850
 $EndSCHEMATC
