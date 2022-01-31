@@ -252,4 +252,79 @@ Wire Wire Line
 	2100 2600 2100 2650
 Wire Wire Line
 	2100 2650 2600 2650
+$Comp
+L Device:Crystal_GND24_Small Y?
+U 1 1 61F8EF88
+P 2100 2150
+F 0 "Y?" V 2054 2294 50  0000 L CNN
+F 1 "16MHz" V 2145 2294 50  0000 L CNN
+F 2 "" H 2100 2150 50  0001 C CNN
+F 3 "~" H 2100 2150 50  0001 C CNN
+	1    2100 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61F93FA6
+P 1500 2400
+F 0 "#PWR?" H 1500 2150 50  0001 C CNN
+F 1 "GND" H 1505 2227 50  0000 C CNN
+F 2 "" H 1500 2400 50  0001 C CNN
+F 3 "" H 1500 2400 50  0001 C CNN
+	1    1500 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 2050 2600 2050
+Wire Wire Line
+	2100 2250 2600 2250
+$Comp
+L Device:C_Small C?
+U 1 1 61F98037
+P 1600 2000
+F 0 "C?" V 1371 2000 50  0000 C CNN
+F 1 "22pF" V 1462 2000 50  0000 C CNN
+F 2 "" H 1600 2000 50  0001 C CNN
+F 3 "~" H 1600 2000 50  0001 C CNN
+	1    1600 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 61F99075
+P 1600 2300
+F 0 "C?" V 1371 2300 50  0000 C CNN
+F 1 "22pF" V 1462 2300 50  0000 C CNN
+F 2 "" H 1600 2300 50  0001 C CNN
+F 3 "~" H 1600 2300 50  0001 C CNN
+	1    1600 2300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1500 2000 1500 2300
+Wire Wire Line
+	1500 2300 1500 2400
+Connection ~ 1500 2300
+Wire Wire Line
+	2100 2050 1700 2050
+Wire Wire Line
+	1700 2050 1700 2000
+Connection ~ 2100 2050
+Wire Wire Line
+	2100 2250 1700 2250
+Wire Wire Line
+	1700 2250 1700 2300
+Connection ~ 2100 2250
+Wire Wire Line
+	2000 2150 2000 2350
+Wire Wire Line
+	2000 2400 1500 2400
+Connection ~ 1500 2400
+Wire Wire Line
+	2200 2150 2200 2350
+Wire Wire Line
+	2200 2350 2000 2350
+Connection ~ 2000 2350
+Wire Wire Line
+	2000 2350 2000 2400
 $EndSCHEMATC
