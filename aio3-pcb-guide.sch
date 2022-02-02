@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:aio3-pcb-guide-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -388,4 +389,74 @@ Wire Wire Line
 	1000 2950 1150 2950
 Wire Wire Line
 	1650 2850 1000 2850
+$Comp
+L Device:Polyfuse_Small F?
+U 1 1 61FA55FC
+P 7350 1550
+F 0 "F?" V 7145 1550 50  0000 C CNN
+F 1 "500mA" V 7236 1550 50  0000 C CNN
+F 2 "" H 7400 1350 50  0001 L CNN
+F 3 "~" H 7350 1550 50  0001 C CNN
+	1    7350 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L random-keyboard-parts:Molex-0548190589 USB?
+U 1 1 61FA7777
+P 5800 1750
+F 0 "USB?" V 6337 1717 60  0000 C CNN
+F 1 "Molex-0548190589" V 6231 1717 60  0000 C CNN
+F 2 "" H 5800 1750 60  0001 C CNN
+F 3 "" H 5800 1750 60  0001 C CNN
+	1    5800 1750
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61FB5CF4
+P 8100 1550
+F 0 "#PWR?" H 8100 1400 50  0001 C CNN
+F 1 "+5V" H 8115 1723 50  0000 C CNN
+F 2 "" H 8100 1550 50  0001 C CNN
+F 3 "" H 8100 1550 50  0001 C CNN
+	1    8100 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 1550 7450 1550
+Wire Wire Line
+	6100 1550 6650 1550
+$Comp
+L power:VCC #PWR?
+U 1 1 61FB7392
+P 6650 1550
+F 0 "#PWR?" H 6650 1400 50  0001 C CNN
+F 1 "VCC" H 6667 1723 50  0000 C CNN
+F 2 "" H 6650 1550 50  0001 C CNN
+F 3 "" H 6650 1550 50  0001 C CNN
+	1    6650 1550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6650 1550
+Wire Wire Line
+	6650 1550 7250 1550
+Text GLabel 6100 1750 2    50   Input ~ 0
+D+
+Text GLabel 6100 1650 2    50   Input ~ 0
+D-
+$Comp
+L power:GND #PWR?
+U 1 1 61FBA386
+P 6200 2000
+F 0 "#PWR?" H 6200 1750 50  0001 C CNN
+F 1 "GND" H 6205 1827 50  0000 C CNN
+F 2 "" H 6200 2000 50  0001 C CNN
+F 3 "" H 6200 2000 50  0001 C CNN
+	1    6200 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 2000 6200 1950
+Wire Wire Line
+	6200 1950 6100 1950
 $EndSCHEMATC
